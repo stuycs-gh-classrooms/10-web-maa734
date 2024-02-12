@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1 {
+  color: blue;
+  font-size: 30px;
+  font-wight: bold;
+  font-family: "Times";
+}
+
+
+
+body {
+  background-color: lightsteelblue;
+  color: darkblue;
+  text-align: start;
+  font-size: 160%;
+  border 1px solid red;
+}
+</style>
+</head>
+</html>
