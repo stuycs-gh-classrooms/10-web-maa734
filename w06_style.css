@@ -24,6 +24,16 @@ body {
 p {
   font-size: 30px;
 }
+
+ul {
+  color: magenta;
+}
+
+li {
+  color: magenta;
+}
+  
+
 </style>
 </head>
 </html>
