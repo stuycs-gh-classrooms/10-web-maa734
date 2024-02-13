@@ -17,8 +17,8 @@ body {
   color: darkblue;
   text-align: start;
   font-size: 160%;
-  border: 1px solid red;
-  width: 10px
+  border: 50px solid red;
+  width: 100px
 }
 
 p {
