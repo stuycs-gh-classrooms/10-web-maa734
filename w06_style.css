@@ -5,7 +5,7 @@
 
 h1 {
   color: blue;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   font-family: "Times";
 }
@@ -17,12 +17,12 @@ body {
   color: darkblue;
   text-align: start;
   font-size: 160%;
-  border: 50px solid red;
+  border: 25px solid darkblue;
   width: 500px
 }
 
 p {
-  font-size: 24px;
+  font-size: 30px;
 }
 </style>
 </head>
