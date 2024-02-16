@@ -1,0 +1,85 @@
+html {
+  font-size: 24px;
+  backgrond-color: cornflowerblue
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  background-color: lightyellow
+  border-radius: 20px;
+}
+
+nav {
+  margin: auto;
+  background-color: lightpink;
+  font-size: 1.5em;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+.landing {
+  color: red;
+  font-variant: all-small-caps;
+}
+
+.box {
+  display: flow-root;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  overflow: hidden;
+}
+
+.box-image {
+  float: right;
+}
+
+.box-text {
+  text-align: end;
+  margin-left: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.strings {
+  font-family: "Sen", sans-serifl
+  font-size: .8em
+}
+
+.scroll {
+  font-family: "Sen", sans-serifl
+  font-size: .8em
+}
+
+.fingerboard {
+  font-family: "Sen", sans-serifl
+  font-size: .8em
+}
+
+.pegs {
+  font-family: "Sen", sans-serifl
+  font-size: .8em
+}
+
+.bow {
+  font-family: "Sen", sans-serifl
+  font-size: .8em
+}
