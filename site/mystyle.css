@@ -59,6 +59,11 @@ h2 {
   text-decoration: underline;
 }
 
+.index {
+  font-family: "Sen", sans-serif;
+  font-size: .8em;
+}
+
 .strings {
   font-family: "Sen", sans-serif;
   font-size: .8em;
