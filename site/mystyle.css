@@ -1,12 +1,12 @@
 html {
   font-size: 24px;
-  backgrond-color: cornflowerblue
+  backgrond-color: cornflowerblue;
 }
 
 body {
   width: 80%;
   margin: auto;
-  background-color: pink
+  background-color: pink;
   border-radius: 20px;
 }
 
@@ -60,26 +60,26 @@ h2 {
 }
 
 .strings {
-  font-family: "Sen", sans-serifl
-  font-size: .8em
+  font-family: "Sen", sans-serifl;
+  font-size: .8em;
 }
 
 .scroll {
-  font-family: "Sen", sans-serifl
-  font-size: .8em
+  font-family: "Sen", sans-serifl;
+  font-size: .8em;
 }
 
 .fingerboard {
-  font-family: "Sen", sans-serifl
-  font-size: .8em
+  font-family: "Sen", sans-serifl;
+  font-size: .8em;
 }
 
 .pegs {
-  font-family: "Sen", sans-serifl
-  font-size: .8em
+  font-family: "Sen", sans-serifl;
+  font-size: .8em;
 }
 
 .bow {
-  font-family: "Sen", sans-serifl
-  font-size: .8em
+  font-family: "Sen", sans-serifl;
+  font-size: .8em;
 }
