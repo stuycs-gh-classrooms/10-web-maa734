@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  width: 80%;
+  width: 90%;
   margin: auto;
   background-color: lavender;
   border-radius: 20px;
@@ -13,7 +13,7 @@ body {
 nav {
   margin: auto;
   background-color: lightpink;
-  font-size: 1.5em;
+  font-size: 1.75em;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
@@ -25,12 +25,13 @@ ul {
 
 li {
   display: inline;
-  padding: 10px;
+  padding: 5px;
+  border-bottom: thick solid purple;
 }
 
 .landing {
   background-color: lavender;
-  font-variant: all-small-caps;
+  border: 4px dashed purple;
 }
 
 .box {
@@ -43,49 +44,56 @@ li {
 .box-image {
   float: left;
   max-width: 50%;
+  margin-left: 1.5em;
 }
 
 .box-text {
   text-align: end;
+  font-size: 30px;
   margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-family: "Times New Roman", serif;
 }
 
 h1 {
   text-align: center;
-  text-decoration: underline;
+  font-weight: bold;
+  font-size: 50px;
+
 }
 
 h2 {
   text-align: center;
-  text-decoration: underline;
+  text-decoration: overline;
+  font-size: 40px;
 }
 
 .index {
-  font-family: "Sen", sans-serif;
+  font-family: "Copperplate", fantasy;
   font-size: .8em;
 }
 
 .strings {
-  font-family: "Sen", sans-serif;
+  font-family: "Copperplate", fantasy;
   font-size: .8em;
 }
 
 .scroll {
-  font-family: "Sen", sans-serif;
+  font-family: "Copperplate", fantasy;
   font-size: .8em;
 }
 
 .fingerboard {
-  font-family: "Sen", sans-serif;
+  font-family: "Copperplate", fantasy;
   font-size: .8em;
 }
 
 .pegs {
-  font-family: "Sen", sans-serif;
+  font-family: "Copperplate", fantasy;
   font-size: .8em;
 }
 
 .bow {
-  font-family: "Sen", sans-serif;
+  font-family: "Copperplate", fantasy;
   font-size: .8em;
 }
