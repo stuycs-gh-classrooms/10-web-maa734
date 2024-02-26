@@ -42,6 +42,7 @@ li {
 
 .box-image {
   float: left;
+  max-width: 50%;
 }
 
 .box-text {
