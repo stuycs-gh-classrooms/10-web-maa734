@@ -22,7 +22,7 @@
           Also the lengths of the koch curve are modified to give the specific shape of the pattern.
         </p class="box-text">
         <img class="box-image" src="koch_modified.png" width = "75%">
-        <pre><code>
+        <pre class="box-code"><code>
           def draw_koch(t, depth, length):
             t.pd()
             t.color(random.randrange(255), 30, 150)
@@ -37,7 +37,7 @@
               t.lt(60)
               draw_koch(t, depth - 1, length)
               t.rt(60)
-        </code></pre>
+        </code></pre class="box-code">
       </div class="box">
       <div class="box">
         <h1>The Sierpinski Triangle</h1>
@@ -52,7 +52,7 @@
             Lastly, the turtle puts the pen up before completing the triangles, leaving empty spaces in the sierpinski triangle.
           </p class="box-text">
           <img class="box-image" src="sierpinski_modified.png" width = "75%">
-          <pre><code>
+          <pre class="box-code"><code>
             def draw_sierpinski(t, depth, length):
               if depth == 1:
                 triangle(t, length)
@@ -71,7 +71,7 @@
                 t.fd(length/2)
                 t.rt(120)
                 t.pd()
-          </code></pre>
+          </code></pre class="box-code">
         </div class="box">
         <div class="box">
           <h1>The Tree</h1>
@@ -86,7 +86,7 @@
               In each recursion the there is a randomized amount added to the angle.
             </p class="box-text">
             <img class="box-image" src="tree_modified.png" width = "75%">
-            <pre><code>
+            <pre class="box-code"><code>
               def tree(t, depth, length, angle):
                   if depth == 1:
                       t.fd(length)
@@ -100,7 +100,7 @@
                       tree(t, depth-1, length, angle + random.randrange(-2,2))
                       t.rt(angle)
                       t.bk(length/3)
-            </code></pre>
+            </code></pre class="box-code">
           </div class="box">
   </body>
 

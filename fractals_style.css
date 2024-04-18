@@ -31,7 +31,7 @@ h1 {
 
 }
 
-pre {
+.box-code {
   text-align: start;
   margin-left: .75em;
   margin-right: .75em;
