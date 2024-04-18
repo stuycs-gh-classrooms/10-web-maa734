@@ -14,14 +14,14 @@
         <p class="box-text">
           Basic curve koch_curve(t, 4, 20)
         </p class="box-text">
-        <img class="box-image" src="koch.png" width = "75%">
+        <img class="box-image" src="koch.png">
         <p class="box-text">
           This koch curve's modifications are:
           At the end the turtle is turned to the right by 60 degrees causing the pattern to go over itself.
           Additionally the colors are randomized in a specific range by changing the amount of red in the color.
           Also the lengths of the koch curve are modified to give the specific shape of the pattern.
         </p class="box-text">
-        <img class="box-image" src="koch_modified.png" width = "75%">
+        <img class="box-image" src="koch_modified.png">
         <pre><code>
           def draw_koch(t, depth, length):
             t.pd()
@@ -44,14 +44,14 @@
           <p class="box-text">
             Basic triangle sierpinski(t, 5, 200)
           </p class="box-text">
-          <img class="box-image" src="sierpinski.png" width = "75%">
+          <img class="box-image" src="sierpinski.png">
           <p class="box-text">
             The sierpinski's modifications are:
             All of the angles in the recursion are swapped, making left right and right left.
             The colors are also once again randomized in a specific range changing the amount of blue in the color.
             Lastly, the turtle puts the pen up before completing the triangles, leaving empty spaces in the sierpinski triangle.
           </p class="box-text">
-          <img class="box-image" src="sierpinski_modified.png" width = "75%">
+          <img class="box-image" src="sierpinski_modified.png">
           <pre><code>
             def draw_sierpinski(t, depth, length):
               if depth == 1:
@@ -78,14 +78,14 @@
             <p class="box-text">
               Basic tree(t, 4, 50, 20)
             </p class="box-text">
-            <img class="box-image" src="tree.png" width = "75%">
+            <img class="box-image" src="tree.png">
             <p class="box-text">
               The tree's modifications are:
               The lengths of going forward and backwards in the intial and final steps are changed making them less.
               The tree is also brown.
               In each recursion the there is a randomized amount added to the angle.
             </p class="box-text">
-            <img class="box-image" src="tree_modified.png" width = "75%">
+            <img class="box-image" src="tree_modified.png">
             <pre><code>
               def tree(t, depth, length, angle):
                   if depth == 1:
