@@ -1,5 +1,5 @@
 html {
-  font-size: 20px;
+  font-size: 15px;
   background-color: cornflowerblue;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .box-text {
   text-align: start;
-  font-size: 30px;
+  font-size: 20px;
   margin-left: .75em;
   margin-right: .75em;
   font-family: "Times New Roman", serif;
