@@ -13,7 +13,9 @@
       <h1>The Koch Curve</h1>
         <p class="box-text">
           Basic koch curve: <br>
-          <pre><code>koch_curve(t, 4, 20)</code></pre><br>
+          <pre><code>
+            koch_curve(t, 4, 20)
+          </code></pre><br>
         </p class="box-text">
         <img class="box-image" src="koch.png">
         <p class="box-text">
@@ -21,31 +23,35 @@
           1)  At the end the turtle is turned to the right by 60 degrees causing the pattern to go over itself.<br>
           2)  Additionally the colors are randomized in a specific range by changing the amount of red in the color.<br>
           3)  Also the lengths of the koch curve are modified to give the specific shape of the pattern.<br>
-          <pre><code>koch_curve(t, 6, 50)</code></pre><br>
+          <pre><code>
+            koch_curve(t, 6, 50)
+          </code></pre><br>
         </p class="box-text">
         <img class="box-image" src="koch_modified.png">
         <pre><code>
-          def draw_koch(t, depth, length):
-            t.pd()
-            t.color(random.randrange(255), 30, 150)
-            if depth == 1:
-              t.fd(length)
-            else:
-              draw_koch(t, depth - 1, length)
-              t.lt(60)
-              draw_koch(t, depth - 1, length*.5)
-              t.rt(120)
-              draw_koch(t, depth - 1, length*.5)
-              t.lt(60)
-              draw_koch(t, depth - 1, length)
-              t.rt(60)
+        def draw_koch(t, depth, length):
+          t.pd()
+          t.color(random.randrange(255), 30, 150)
+          if depth == 1:
+            t.fd(length)
+          else:
+            draw_koch(t, depth - 1, length)
+            t.lt(60)
+            draw_koch(t, depth - 1, length*.5)
+            t.rt(120)
+            draw_koch(t, depth - 1, length*.5)
+            t.lt(60)
+            draw_koch(t, depth - 1, length)
+            t.rt(60)
         </code></pre>
       </div class="box">
       <div class="box">
         <h1>The Sierpinski Triangle</h1>
           <p class="box-text">
             Basic sierpinski triangle: <br>
-            <pre><code>sierpinski(t, 5, 200)</code></pre><br>
+            <pre><code>
+              sierpinski(t, 5, 200)
+            </code></pre><br>
           </p class="box-text">
           <img class="box-image" src="sierpinski.png">
           <p class="box-text">
@@ -53,35 +59,39 @@
             1)  All of the angles in the recursion are swapped, making left right and right left.<br>
             2)  The colors are also once again randomized in a specific range changing the amount of blue in the color.<br>
             3)  Lastly, the turtle puts the pen up before completing the triangles, leaving empty spaces in the sierpinski triangle.<br>
-            <pre><code>sierpinski(t, 5, 300)</code></pre><br>
+            <pre><code>
+              sierpinski(t, 5, 300)
+            </code></pre><br>
           </p class="box-text">
           <img class="box-image" src="sierpinski_modified.png">
           <pre><code>
-            def draw_sierpinski(t, depth, length):
-              if depth == 1:
-                triangle(t, length)
-                t.color(200, 40, random.randrange(255))
-              else:
-                draw_sierpinski(t, depth-1, length/2)
-                t.fd(length/2)
-                draw_sierpinski(t, depth-1, length/2)
-                t.pu()
-                t.bk(length/2)
-                t.rt(60)
-                t.fd(length/2)
-                t.lt(60)
-                draw_sierpinski(t, depth-1, length/2)
-                t.lt(120)
-                t.fd(length/2)
-                t.rt(120)
-                t.pd()
+          def draw_sierpinski(t, depth, length):
+            if depth == 1:
+              triangle(t, length)
+              t.color(200, 40, random.randrange(255))
+            else:
+              draw_sierpinski(t, depth-1, length/2)
+              t.fd(length/2)
+              draw_sierpinski(t, depth-1, length/2)
+              t.pu()
+              t.bk(length/2)
+              t.rt(60)
+              t.fd(length/2)
+              t.lt(60)
+              draw_sierpinski(t, depth-1, length/2)
+              t.lt(120)
+              t.fd(length/2)
+              t.rt(120)
+              t.pd()
           </code></pre>
         </div class="box">
         <div class="box">
           <h1>The Tree</h1>
             <p class="box-text">
               Basic tree: <br>
-              <pre><code>tree(t, 4, 50, 20)</code></pre><br>
+              <pre><code>
+                tree(t, 4, 50, 20)
+              </code></pre><br>
             </p class="box-text">
             <img class="box-image" src="tree.png">
             <p class="box-text">
@@ -89,23 +99,25 @@
               1)  The lengths of going forward and backwards in the intial and final steps are changed making them less.<br>
               2)  The tree is also brown.<br>
               3)  In each recursion the there is a randomized amount added to the angle.<br>
-              <pre><code>tree(t, 9, 70, 15)</code></pre><br>
+              <pre><code>
+                tree(t, 9, 70, 15)
+              </code></pre><br>
             </p class="box-text">
             <img class="box-image" src="tree_modified.png">
             <pre><code>
-              def tree(t, depth, length, angle):
-                  if depth == 1:
-                      t.fd(length)
-                      t.bk(length)
-                      t.color(128,0,0)
-                  else:
-                      t.fd(length/3)
-                      t.rt(angle)
-                      tree(t, depth-1, length, angle + random.randrange(-2,2))
-                      t.lt(2*angle)
-                      tree(t, depth-1, length, angle + random.randrange(-2,2))
-                      t.rt(angle)
-                      t.bk(length/3)
+            def tree(t, depth, length, angle):
+                if depth == 1:
+                    t.fd(length)
+                    t.bk(length)
+                    t.color(128,0,0)
+                else:
+                    t.fd(length/3)
+                    t.rt(angle)
+                    tree(t, depth-1, length, angle + random.randrange(-2,2))
+                    t.lt(2*angle)
+                    tree(t, depth-1, length, angle + random.randrange(-2,2))
+                    t.rt(angle)
+                    t.bk(length/3)
             </code></pre>
           </div class="box">
   </body>
