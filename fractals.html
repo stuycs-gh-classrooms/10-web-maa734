@@ -21,8 +21,22 @@
         Also the lengths of the koch curve are modified to give the specific shape of the pattern.
       </p>
       <img src="koch_modified.png" width = "50%">
-      <code>
-      </code>
+      <pre><code>
+        def draw_koch(t, depth, length):
+          t.pd()
+          t.color(random.randrange(255), 30, 150)
+          if depth == 1:
+            t.fd(length)
+          else:
+            draw_koch(t, depth - 1, length)
+            t.lt(60)
+            draw_koch(t, depth - 1, length*.5)
+            t.rt(120)
+            draw_koch(t, depth - 1, length*.5)
+            t.lt(60)
+            draw_koch(t, depth - 1, length)
+            t.rt(60)
+      </code></pre>
       <h1>The Sierpinski Triangle</h1>
         <p>
           Basic triangle sierpinski(t, 5, 200)
@@ -35,8 +49,26 @@
           Lastly, the turtle puts the pen up before completing the triangles, leaving empty spaces in the sierpinski triangle.
         </p>
         <img src="sierpinski_modified.png" width = "50%">
-        <code>
-        </code>
+        <pre><code>
+          def draw_sierpinski(t, depth, length):
+            if depth == 1:
+              triangle(t, length)
+              t.color(200, 40, random.randrange(255))
+            else:
+              draw_sierpinski(t, depth-1, length/2)
+              t.fd(length/2)
+              draw_sierpinski(t, depth-1, length/2)
+              t.pu()
+              t.bk(length/2)
+              t.rt(60)
+              t.fd(length/2)
+              t.lt(60)
+              draw_sierpinski(t, depth-1, length/2)
+              t.lt(120)
+              t.fd(length/2)
+              t.rt(120)
+              t.pd()
+        </code></pre>
       <h1>The Tree</h1>
         <p>
           Basic tree(t, 4, 50, 20)
@@ -49,8 +81,21 @@
           In each recursion the there is a randomized amount added to the angle.
         </p>
         <img src="tree_modified.png" width = "50%">
-        <code>
-        </code>
+        <pre><code>
+          def tree(t, depth, length, angle):
+              if depth == 1:
+                  t.fd(length)
+                  t.bk(length)
+                  t.color(128,0,0)
+              else:
+                  t.fd(length/3)
+                  t.rt(angle)
+                  tree(t, depth-1, length, angle + random.randrange(-2,2))
+                  t.lt(2*angle)
+                  tree(t, depth-1, length, angle + random.randrange(-2,2))
+                  t.rt(angle)
+                  t.bk(length/3)
+        </code></pre>
   </body>
 
 </html>
