@@ -11,7 +11,7 @@ body {
 }
 
 .box-image {
-  float: right;
+  float: left;
   max-width: 50%;
   margin-left: 1.5em;
 }
