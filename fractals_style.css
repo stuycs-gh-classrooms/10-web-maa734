@@ -11,16 +11,16 @@ body {
 }
 
 .box-image {
-  float: left;
-  max-width: 50%;
+  float: bottom;
+  max-width: 20%;
   margin-left: 1.5em;
 }
 
 .box-text {
   text-align: start;
   font-size: 30px;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: .75em;
+  margin-right: .75em;
   font-family: "Times New Roman", serif;
 }
 
